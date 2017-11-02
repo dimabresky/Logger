@@ -1,5 +1,5 @@
 <?php
-namespace travelsoft;
+namespace travelsoft\rest;
 
 /**
  * Logger
@@ -43,7 +43,7 @@ class Logger {
                     $strFunctionStack = "";
                     $strFilesStack = "";
                     $firstFrame = (count($arBacktrace) == 1? 0: 1);
-                    $iterationsCount = min(count($arBacktrace), $traceDepth);
+                    $iterationsCount = min(count($arBacktrace), 7);
                     for ($i = $firstFrame; $i < $iterationsCount; $i++) {
                         if (strlen($strFunctionStack)>0) {
                             $strFunctionStack .= " < ";
