@@ -5,6 +5,8 @@
 ```php
 <?php
 
+include "Logger.php";
+
 /**
 * @var $path2log абсолютный путь к файлу логов (по-умолчанию файл logger_log.txt в корне сайта)
 */
