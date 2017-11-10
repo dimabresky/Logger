@@ -1,5 +1,5 @@
 <?php
-namespace travelsoft\rest;
+namespace travelsoft;
 
 /**
  * Logger
